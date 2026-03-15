@@ -1,0 +1,83 @@
+/* Main Navbar Styling */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #f0f2f5;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+/* Logo */
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Nav Items Container */
+.navbar-ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-li {
+  font-size: 22px;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-item:hover {
+  color: #0077cc;
+}
+
+/* Hamburger Button */
+.navbar-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Responsive Mobile View */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    background-color: #f0f2f5;
+    border-top: 1px solid #ccc;
+  }
+
+  .navbar-ul.show {
+    display: flex;
+  }
+
+  .navbar-li {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
